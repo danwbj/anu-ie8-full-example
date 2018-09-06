@@ -1,8 +1,8 @@
 {
-  "name": "anu-ie8-full-example",
-  "title": "anu-ie8-full-example",
+  "name": "survey",
+  "title": "问卷调查",
   "version": "1.0.0",
-  "description": "anu-ie8-full-example",
+  "description": "survey",
   "main": "index.js",
   "scripts": {
     "start": "node ./tools/server.js",

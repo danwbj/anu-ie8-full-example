@@ -33,7 +33,7 @@ function startDevServer() {
       historyApiFallback: true
     })
   );
-  //   app.use(hotMiddleware(compiler));
+  // app.use(hotMiddleware(compiler));
   app.use('/api/*', webProxy);
   /*=============webpack end==============*/
 

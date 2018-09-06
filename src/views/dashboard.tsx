@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import QCheckBox from '../components/q-checkbox';
+
 export interface DashboardProps {
   path;
   count;
@@ -17,6 +19,7 @@ export default class Dashboard extends React.Component<DashboardProps, any> {
         <h1>The count is: {props.count}</h1>
         <button onClick={props.addByOne}>Add 1</button>
         <button onClick={props.addByOneAsync}>Add 1 Async</button>
+        <QCheckBox />
       </div>
     );
   }

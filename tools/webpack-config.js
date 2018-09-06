@@ -43,9 +43,19 @@ module.exports = (type) => {
 
   return {
     entry: _.compact([
-      //   isDev && 'react-hot-loader/patch',
-      //   isDev && `webpack-hot-middleware/client?http://127.0.0.1:${config.port}`,
-      //   isDev && 'webpack/hot/only-dev-server',
+      'core-js/modules/es6.object.get-own-property-names',
+      'core-js/modules/es6.object.get-prototype-of',
+      'es5-shim',
+      'es6-shim',
+      'object-create-ie8',
+      'object-defineproperty-ie8',
+      'console-polyfill',
+      'json3',
+      'bluebird',
+      'fetch-polyfill2',
+      // isDev && 'react-hot-loader/patch',
+      // isDev && `webpack-hot-middleware/client?http://127.0.0.1:${config.port}`,
+      // isDev && 'webpack/hot/only-dev-server',
       './src/index',
       './src/styles/normalize.css',
       './src/styles/index.less'
@@ -118,7 +128,7 @@ module.exports = (type) => {
     },
     mode: type === 'dev' ? 'development' : 'production',
     plugins: _.compact([
-      //   isDev && new webpack.HotModuleReplacementPlugin(),
+      // isDev && new webpack.HotModuleReplacementPlugin(),
       new HtmlWebpackPlugin({
         title: pkgJson.title,
         template: './src/templates/index.ejs',
