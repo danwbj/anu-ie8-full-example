@@ -1,0 +1,1 @@
+export { catModel } from './catModel';
