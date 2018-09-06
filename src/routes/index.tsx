@@ -1,19 +1,10 @@
 import React from 'react';
 import { Router, Link } from 'router';
 import Dashboard from '../container/dashboard';
+import Home from '../container/home';
 
 export interface HomeProps {
   path;
-}
-
-class Home extends React.PureComponent<HomeProps, any> {
-  public render() {
-    return (
-      <div>
-        <h2>Welcome</h2>
-      </div>
-    );
-  }
 }
 
 class HInput extends React.Component<any, any> {
